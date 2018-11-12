@@ -1,0 +1,37 @@
+language: node_js
+node_js: stable
+
+# Travis-CI Caching
+cache:
+  directories:
+    - node_modules
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+before_script:
+ # - npm install -g gulp
+
+
+script:
+  - hexo clean && hexo algolia && hexo g
+
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "kangzhiheng"
+  - git config user.email "kangzhiheng@live.cn"
+  - git add .
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${TAKEN}@${GH_REF}" master:master
+# E: Build LifeCycle
+
+branches:
+  only:
+    - hexo
+env:
+ global:
+   - GH_REF: github.com/kangzhiheng/kangzhiheng.github.io.git
+             
