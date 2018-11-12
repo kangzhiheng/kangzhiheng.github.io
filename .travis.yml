@@ -15,7 +15,7 @@ before_script:
 
 
 script:
-  - hexo clean && hexo algolia && hexo g
+  - hexo clean && hexo g
 
 
 after_script:
@@ -24,7 +24,7 @@ after_script:
   - git config user.name "kangzhiheng"
   - git config user.email "kangzhiheng@live.cn"
   - git add .
-  - git commit -m "Update docs"
+  - git commit -m "Update"
   - git push --force --quiet "https://${TAKEN}@${GH_REF}" master:master
 # E: Build LifeCycle
 
