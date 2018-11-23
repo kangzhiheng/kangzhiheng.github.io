@@ -43,7 +43,14 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
+# 代码高亮
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'tomorrow'
+  line_number: false    # default false
+  custom_css:
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -82,12 +89,23 @@ deploy:
   repo: git@github.com:kangzhiheng/kangzhiheng.github.io.git
   branch: master
 
-prism_plugin:
-  mode: 'preprocess'    # realtime/preprocess
-  theme: 'tomorrow'
-  line_number: false    # default false
-  custom_css:
-
+# 内容搜索
 search:
   path: search.xml
   field: post
+
+# 中文链接装拼音
+permalink_pinyin:
+  enable: true
+  separator: '-'
+
+# 添加RSS订阅支持
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content: 
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
