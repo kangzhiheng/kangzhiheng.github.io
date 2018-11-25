@@ -2,6 +2,7 @@
 title: Lab532服务器环境须知
 data: 2018-11-23 16:00:00
 author: kangzhiheng
+img: https://i.loli.net/2018/11/25/5bfaaecf6f2b2.jpg
 categories: Markdown
 tags:
   - Typora
