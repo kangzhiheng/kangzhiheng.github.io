@@ -20,8 +20,8 @@ menu:
 # index page dream text,
 # 配置首页显示"梦想"的语句.
 dream:
-  enable: false
-  text: The best preparation for tomorrow is doing your best today.
+  enable: true
+  text: 谁知我知你，我知你知深。
 
 # Whether to display the title of the recommended posts
 # 是否显示推荐文章的标题
@@ -45,7 +45,7 @@ indexbtn:
 # Whether to activate the Post TOC, and Configure which title types are supported by TOC support.
 # 是否激活文章 TOC 功能，并配置TOC支持选中哪些标题类型.
 toc:
-  enable: false
+  enable: true
   heading: h2, h3, h4
 
 # 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
