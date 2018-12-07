@@ -11,6 +11,7 @@ author: K & W
 language: zh-CN
 timezone:
 
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://www.adoredee.com
@@ -80,7 +81,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: edinburgh
+theme: Daily
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
