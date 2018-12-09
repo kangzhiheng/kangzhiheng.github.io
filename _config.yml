@@ -90,23 +90,3 @@ deploy:
   repo: git@github.com:kangzhiheng/kangzhiheng.github.io.git
   branch: master
 
-# 内容搜索
-search:
-  path: search.xml
-  field: post
-
-# 中文链接装拼音
-permalink_pinyin:
-  enable: true
-  separator: '-'
-
-# 添加RSS订阅支持
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-  hub:
-  content: 
-  content_limit: 140
-  content_limit_delim: ' '
-  order_by: -date
