@@ -90,3 +90,7 @@ deploy:
   repo: git@github.com:kangzhiheng/kangzhiheng.github.io.git
   branch: master
 
+nav:
+    Home: .
+    Archive: archives
+    About: about
